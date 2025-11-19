@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-content" class="w-50 m-5 p-5 mx-auto mt-5 border border-black rounded-3 shadow">
+
+        <div class="w-100">
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="mx-auto border-none col-9">
+                    <p class="text-end fs-2 fw-bold">UNIT CONVERTER</p>
+                </div>
+                <div class="col-3">
+                    <select class="form-control bg-secondary text-white fs-5" name="conversion-type" id="conversion-type">
+                        <option value="type-length">Length</option>
+                        <option value="type-mass">Mass</option>
+                        <option value="type-time">Time</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="length-conversion" class="conversion-box container"> 
+            <div id="lenght-box-input" class="row mt-2">
+                <div class="col-9">
+                    <input type="number" class="form-control" id="length-input">
+                </div>
+                <div class="col-3">
+                    <select class="form-control bg-secondary text-white" name="lenght-unit-input" id="lenght-unit-input"> 
+                        <option value="km">kilometer (km)</option>
+                        <option value="m">meter (m)</option>    
+                        <option value="cm">Centimeter (cm)</option>  
+                        <option value="mm">Milimeter (mm)</option>
+
+                        <option value="mi" selected>Mile (mi)</option>
+                        <option value="yd">Yard (yd)</option>    
+                        <option value="ft">Feet (ft)</option>  
+                        <option value="in">Inch (in)</option>
+                    </select>
+                </div>    
+            </div>
+            
+            <div id="lenght-box-output" class="row mt-2">
+                <div class="col-9">
+                    <input type="number" class="form-control" id="length-output" disabled>
+                </div>
+                <div class="col-3">
+                    <select class="form-control bg-secondary text-white" name="lenght-unit-output" id="lenght-unit-output">
+                        <option value="km">kilometer (km)</option>
+                        <option value="m" selected>meter (m)</option>    
+                        <option value="cm">Centimeter (cm)</option>  
+                        <option value="mm">Milimeter (mm)</option>
+
+                        <option value="mi">Mile (mi)</option>
+                        <option value="yd">Yard (yd)</option>    
+                        <option value="ft">Feet (ft)</option>  
+                        <option value="in">Inch (in)</option>
+                    </select>
+                </div>        
+            </div>
+        </div>
+
+        <div id="mass-conversion" class="conversion-box container pt-5"> 
+            <div id="lenght-box-input" class="row">
+                <div class="col-9 p-3">
+                    <input type="number" class="form-control" id="mass-input">
+                </div>
+                <div class="col-3 p-3">
+                    <select class="form-control" name="lenght-unit-input" id="lenght-unit-input">
+                        <option value="m" selected>Gram (g)</option>    
+                    </select>
+                </div>    
+            </div>
+            
+            <div id="lenght-box-output" class="row">
+                <div class="col-9 p-3">
+                    <input type="number" class="form-control" id="mass-output" disabled>
+                </div>
+                <div class="col-3 p-3">
+                    <select class="form-control" name="lenght-unit-output" id="lenght-unit-output">
+                        <option value="km" selected>kilogram (kg)</option>    
+                    </select>
+                </div>        
+            </div>
+        </div>
+
+        <div id="time-conversion" class="conversion-box container pt-5"> 
+            <div id="lenght-box-input" class="row">
+                <div class="col-9 p-3">
+                    <input type="number" class="form-control" id="time-input">
+                </div>
+                <div class="col-3 p-3">
+                    <select class="form-control" name="lenght-unit-input" id="lenght-unit-input">
+                        <option value="m" selected>Second (sec)</option>    
+                    </select>
+                </div>    
+            </div>
+            
+            <div id="lenght-box-output" class="row">
+                <div class="col-9 p-3">
+                    <input type="number" class="form-control" id="time-output" disabled>
+                </div>
+                <div class="col-3 p-3">
+                    <select class="form-control" name="lenght-unit-output" id="lenght-unit-output">
+                        <option value="km" selected>Minute (min)</option>    
+                    </select>
+                </div>        
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ================================================================================================================================================================================================================== -->
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- ================================================================================================================================================================================================================== -->
+
+</body>
+</html>
