@@ -24,24 +24,22 @@
                     <select class="form-control bg-secondary text-white fs-5" name="conversion-type" id="conversion-type">
                         <option value="type-length">Length</option>
                         <option value="type-mass">Mass</option>
-                        <option value="type-time">Time</option>
                     </select>
                 </div>
             </div>
         </div>
 
-
-        <div id="length-conversion" class="conversion-box container"> 
+        <div id="length-conversion" class="conversion-box container pt-5">
             <div id="lenght-box-input" class="row mt-2">
                 <div class="col-9">
                     <input type="number" class="form-control" id="length-input">
                 </div>
                 <div class="col-3">
                     <select class="form-control bg-secondary text-white" name="lenght-unit-input" id="lenght-unit-input"> 
-                        <option value="km">kilometer (km)</option>
-                        <option value="m">meter (m)</option>    
+                        <option value="km">Kilometer (km)</option>
+                        <option value="m">Meter (m)</option>    
                         <option value="cm">Centimeter (cm)</option>  
-                        <option value="mm">Milimeter (mm)</option>
+                        <option value="mm">Millimeter (mm)</option>
 
                         <option value="mi" selected>Mile (mi)</option>
                         <option value="yd">Yard (yd)</option>    
@@ -53,14 +51,14 @@
             
             <div id="lenght-box-output" class="row mt-2">
                 <div class="col-9">
-                    <input type="number" class="form-control" id="length-output" disabled>
+                    <input type="text" class="form-control" id="length-output" disabled>
                 </div>
                 <div class="col-3">
                     <select class="form-control bg-secondary text-white" name="lenght-unit-output" id="lenght-unit-output">
-                        <option value="km">kilometer (km)</option>
-                        <option value="m" selected>meter (m)</option>    
+                        <option value="km">Kilometer (km)</option>
+                        <option value="m" selected>Meter (m)</option>    
                         <option value="cm">Centimeter (cm)</option>  
-                        <option value="mm">Milimeter (mm)</option>
+                        <option value="mm">Millimeter (mm)</option>
 
                         <option value="mi">Mile (mi)</option>
                         <option value="yd">Yard (yd)</option>    
@@ -70,50 +68,41 @@
                 </div>        
             </div>
         </div>
+        
 
-        <div id="mass-conversion" class="conversion-box container pt-5"> 
-            <div id="lenght-box-input" class="row">
-                <div class="col-9 p-3">
+        <div id="mass-conversion" class="conversion-box container pt-5">
+            <div id="mass-box-input" class="row mt-2">
+                <div class="col-9">
                     <input type="number" class="form-control" id="mass-input">
                 </div>
-                <div class="col-3 p-3">
-                    <select class="form-control" name="lenght-unit-input" id="lenght-unit-input">
-                        <option value="m" selected>Gram (g)</option>    
-                    </select>
-                </div>    
-            </div>
-            
-            <div id="lenght-box-output" class="row">
-                <div class="col-9 p-3">
-                    <input type="number" class="form-control" id="mass-output" disabled>
-                </div>
-                <div class="col-3 p-3">
-                    <select class="form-control" name="lenght-unit-output" id="lenght-unit-output">
-                        <option value="km" selected>kilogram (kg)</option>    
-                    </select>
-                </div>        
-            </div>
-        </div>
+                <div class="col-3">
+                    <select class="form-control bg-secondary text-white" name="mass-unit-input" id="mass-unit-input"> 
+                        <option value="t">Tonne (t)</option>
+                        <option value="kg" selected>kilogram (kg)</option>
+                        <option value="g">Gram (g)</option>    
+                        <option value="mg">Milligram (mg)</option>  
 
-        <div id="time-conversion" class="conversion-box container pt-5"> 
-            <div id="lenght-box-input" class="row">
-                <div class="col-9 p-3">
-                    <input type="number" class="form-control" id="time-input">
-                </div>
-                <div class="col-3 p-3">
-                    <select class="form-control" name="lenght-unit-input" id="lenght-unit-input">
-                        <option value="m" selected>Second (sec)</option>    
+                        <option value="lb">Pound (lb)</option>
+                        <option value="oz">Ounce (oz)</option>    
+                        <option value="ton">Ton (ton)</option>  
                     </select>
                 </div>    
             </div>
             
-            <div id="lenght-box-output" class="row">
-                <div class="col-9 p-3">
-                    <input type="number" class="form-control" id="time-output" disabled>
+            <div id="mass-box-output" class="row mt-2">
+                <div class="col-9">
+                    <input type="text" class="form-control" id="mass-output" disabled>
                 </div>
-                <div class="col-3 p-3">
-                    <select class="form-control" name="lenght-unit-output" id="lenght-unit-output">
-                        <option value="km" selected>Minute (min)</option>    
+                <div class="col-3">
+                    <select class="form-control bg-secondary text-white" name="mass-unit-output" id="mass-unit-output">
+                        <option value="t">Tonne (t)</option>
+                        <option value="kg">kilogram (kg)</option>
+                        <option value="g">Gram (g)</option>    
+                        <option value="mg">Milligram (mg)</option>  
+
+                        <option value="lb" selected>Pound (lb)</option>
+                        <option value="oz">Ounce (oz)</option>    
+                        <option value="ton">Ton (ton)</option>
                     </select>
                 </div>        
             </div>
