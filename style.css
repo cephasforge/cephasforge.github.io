@@ -1,0 +1,28 @@
+:root{
+    --c-border: 1px solid rgb(0, 0, 0,0.1);
+    --radius: 10px;
+    --bg-color: rgb(0, 0, 0,0.2);
+}
+
+body{
+    background: #67767a;
+    background: -webkit-linear-gradient(304deg, rgba(103, 118, 122, 1) 4%, rgba(240, 245, 244, 1) 29%, rgba(138, 150, 156, 1) 50%, rgba(229, 237, 223, 1) 72%, rgba(127, 133, 143, 1) 95%);
+    background: -moz-linear-gradient(304deg, rgba(103, 118, 122, 1) 4%, rgba(240, 245, 244, 1) 29%, rgba(138, 150, 156, 1) 50%, rgba(229, 237, 223, 1) 72%, rgba(127, 133, 143, 1) 95%);
+    background: linear-gradient(304deg, rgba(103, 118, 122, 1) 4%, rgba(240, 245, 244, 1) 29%, rgba(138, 150, 156, 1) 50%, rgba(229, 237, 223, 1) 72%, rgba(127, 133, 143, 1) 95%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#67767A", endColorstr="#7F858F", GradientType=0);
+
+    background-repeat: no-repeat;   /* empêche la répétition */
+    background-size: cover;         /* occupe tout l’écran */
+    background-attachment: fixed;   /* effet “wallpaper” */
+}
+
+#navHeader{
+    background-color: var(--bg-color);
+    border-bottom: var(--c-border);
+}
+
+#ovDiv{
+    border: var(--c-border);
+    border-radius: var(--radius);
+    background-color: var(--bg-color);
+}
