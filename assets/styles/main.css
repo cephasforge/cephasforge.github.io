@@ -3,10 +3,15 @@
   --main-bg: linear-gradient(135deg, #050816, #0A1030, #120A2E);
 }
 
+/* =========================================================================================================== */
+
 body {
   min-height: 100vh;
   background: var(--main-bg);
 }
+
+/* =========================================================================================================== */
+
 
 .nav-bg{
   background: var(--main-bg);
@@ -48,4 +53,29 @@ body {
 .btn-gradient:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 30px rgba(116, 75, 249, 0.5);
+}
+
+.grey-logo{
+  height: 60px;
+  width: 80px;
+}
+
+.bi-top{
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.ic-tool{
+  width: 100px;
+  height: 100px;
+}
+
+.tool-div{
+  border: 1px solid #3776AB;
+  box-shadow: 0 0 20px rgba(116, 75, 249, 0.35);
+  border-radius: 12px;
+  transition: 0.3s;
+
+  width: 15%;
 }
