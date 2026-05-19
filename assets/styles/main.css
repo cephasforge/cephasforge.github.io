@@ -38,21 +38,21 @@ body {
 }
 
 .btn-gradient {
-    background: linear-gradient(90deg, #3E53F8, #744BF9);
-    border: none;
-    color: white;
+  background: linear-gradient(90deg, #3E53F8, #744BF9);
+  border: none;
+  color: white;
 
-    box-shadow: 0 0 20px rgba(116, 75, 249, 0.35);
+  box-shadow: 0 0 20px rgba(116, 75, 249, 0.35);
 
-    border-radius: 12px;
-    padding: 16px 32px;
+  border-radius: 12px;
+  padding: 16px 32px;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn-gradient:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 30px rgba(116, 75, 249, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(116, 75, 249, 0.5);
 }
 
 .grey-logo{
@@ -64,6 +64,13 @@ body {
   width: 40px;
   height: 40px;
   color: white;
+}
+
+.bi-top:hover{
+  width: 43px;
+  height: 43px;
+
+  box-shadow: 0 0 30px rgba(116, 75, 249, 0.35);
 }
 
 .ic-tool{
@@ -78,4 +85,12 @@ body {
   transition: 0.3s;
 
   width: 15%;
+}
+
+/* =========================================================================================================== */
+
+#clip-img{
+  width: 75%;
+  display: block;
+  margin: auto;
 }
